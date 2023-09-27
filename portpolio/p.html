@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            border: 20px solid #392525 ;
+                margin: 0;
+                padding: 0.5rem;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+        }
+        nav ul{
+            display: flex;
+            font-size: 20px;
+            padding-left: 260px;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 23px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+
+        }
+        nav ul li a:hover{
+            color: blueviolet;
+            font-size: 1.1rem;
+           
+        }
+        .left{
+            font-size: 66px;
+            font-style: italic;
+            margin-top: 1px;
+            margin-right: -80px;
+            
+            
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+            align-items: center;
+            margin: 140px 0px;
+        }
+        .first > div{
+            width: 30%;
+          
+        }
+        .left1{
+            font-size: 2.5rem;
+            margin-top: -46px;
+            margin-left: -113px;
+            padding: 82px;
+
+        }
+        .right1 img{
+            width: 80%;
+            border: 20px solid white;
+            border-radius: 65px;
+        }
+        .purple{
+            color: blueviolet;
+        }
+        .second{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .second h1{
+            font-size: 50px
+
+        }
+        .first div div{
+            font-size: 1.4rem;
+        }
+        .second .box{
+            background: white;
+            width: 80vw;
+            height: 5px;
+            margin: 80px 0px;
+            display: flex;
+        }
+        .second .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 119px;
+            
+        }
+        .vertical-title1{
+            position: relative;
+            top: 35px;
+            left: -46px;
+            width: 170px;
+            color: red;
+        }
+
+        .vertical-title2{
+            position: relative;
+            top: 71px;
+            left: -75px;
+            width: 170px;
+            color:red;
+           
+        }
+        .vertical-title3{
+            position: relative;
+            top: 70px;
+            left: -48px;
+            width: 170px;
+            color: red;
+        }
+    
+        .vertical-title4{
+            position: relative;
+            top: 33px;
+            left: -19px;
+            width: 170px;
+            color: red;
+        }
+        .vertical-title5{
+            position: relative;
+            top: 43px;
+            left: -53px;
+            width: 127px;
+            color: red;
+        }
+        .vertical-desc1{
+            position: relative;
+            top: 34px;
+            left: -67px;
+            color: white;
+            width: 150px;
+            font-size: 14px;
+         
+        }
+        .vertical-desc2{
+            position: relative;
+            top: 72px;
+            left: -73px;
+            color:white;
+            width: 150px;
+            font-size: 14px;
+            
+        }
+        .vertical-desc3{
+            position: relative;
+            top: 68px;
+            left: -96px;
+            color:white;
+            width: 212px;
+            font-size: 14px;
+           
+        }
+        .vertical-desc4{
+            position: relative;
+            top: 30px;
+            left: -40px;
+            color: white ;
+            width: 150px;
+            font-size: 14px;
+           
+        }
+        .vertical-desc5{
+            position: relative;
+            top: 41px;
+            left: -61px;
+            color:white;
+            width: 150px;
+            font-size: 14px;
+           
+        }
+        .image-top{
+            width: 55px;
+            position: relative;
+            top: -63px;
+            left: -25px;
+        }
+        footer{
+
+            background-color: rgb(57, 52, 52);
+            height: 500px;
+        }
+        .footer{
+            display: flex;
+            margin: 0px 87px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 227px;
+
+            margin-top: 54px;
+        }
+        .footer-first{
+            font-weight: bolder;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 100px 0px;
+            border: 2px solid yellow;
+        }
+        .text-centre{
+            text-align: center;
+            color: gray;
+            padding: 90px 0px;
+        }
+        .image{
+            width: 30px;
+            border: 2px solid red;
+            
+        }
+        
+        h1{
+            margin-top: -100px;
+            margin-left: 0px;
+
+        }
+        .btn1{
+            background-color: rgb(22, 142, 207);
+            color: white;
+            height: 42px;
+            width: 226px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 20px;
+               
+        }
+        .btn1:hover{
+            background-color: rgb(1, 104, 169);
+        }
+
+        .btn2{
+            background-color:palevioletred;
+            color: white ;
+            height: 42px;
+            width: 226px;
+            text-align: center;
+            margin-top: 27px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 20px;
+
+            
+        }
+        .btn2:hover{
+            background-color: rgb(135, 50, 78);
+        }
+        .btn3{
+            background-color: blue;
+            color: white ;
+            height: 42px;
+            width: 226px;
+            text-align: center;
+            margin-top: 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+        .btn3:hover{
+            background-color: rgb(0, 0, 143);
+        }
+
+        .btn4{
+            background-color:  rgb(22, 142, 207);
+            color: white ;
+            height: 42px;
+            width: 226px;
+            text-align: center;
+            margin-top: 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+        .btn4:hover{
+            background-color: rgb(1, 104, 169);
+        }
+        .footer-first{
+            background-color: yellow;
+            color: black;
+            border-radius: 15px;
+        }
+        .service{
+            color:white;
+            background-color:blue;
+            border-radius: 5px;
+            margin-top: 13px;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 0px;
+            
+
+        
+        }
+        .website{
+            color:white;
+            margin-top: 26px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .consulting{
+
+            color:white;
+            margin-top: 26px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .E{
+            color:white;
+            margin-top: 26px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .contact{
+            color:white;
+            background-color:blue;
+            border-radius: 5px;
+            margin-top: 13px;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 0px;
+
+        }
+        .number{
+            color:white;
+            margin-top: 26px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 0px;
+        
+        }
+        .email{
+            color:white;
+            margin-top: 26px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .number, .email,.contact,.E,.website, .service , .consulting, .footer-first{
+            cursor:pointer;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b></b>Tarun's portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <Li><a href="/">Services</a></Li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="left1">Hii there, I am <span class="purple">Tarun Lohia</span>
+                <div>I am a passionate and dedicated web developer with a keen 
+                    eye for crafting immersive digital experiences.With a solid 
+                    foundation in front-end technologies and Explore the exciting realms of
+                    data, algorithms, and problem solving while building a strong
+                    foundation for your future.
+                    Need to learn more about the
+                    upcoming trends.
+                     </div>
+            </div>
+            <div class="right1">
+                <img src="images/pic.jpg"/>
+            </div>
+        </section>
+        <section class="second">
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/education.png"/>
+                    <div class="vertical-title1">
+                        EDUCATION
+                    </div>
+                    <div class="vertical-desc1">
+                        <ul>
+                            <li>Btech in AI/ML | Sushant University , Gurgaon</li>
+                            <li>X(CBSE)|R.K Public school,Gurugram</li>
+                            <li>XII(CBSE)|Sherwood Convent School,Gurugram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/sushant.png"/>
+                    <div class="vertical-title2">
+                    Sushant university bootcamp
+                    </div>
+                    <div class="vertical-desc2">Attended skill training program held by vishwa gyan pratishthan
+                                        </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/web.png"/>
+                    <div class="vertical-title3">
+                        HOME SERVICE SYSTEM
+                    </div>
+                    <div class="vertical-desc3">created a Home service system project
+                        designed to streamline and enhance the process of 
+                        requesting and scheduling various home services. This
+                         web-based application caters to the needs of homeowners,
+                          connecting them with skilled service providers in their
+                           local area.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/skills.png"/>
+                    <div class="vertical-title4">
+                        SKILLS
+                    </div>
+                    <div class="vertical-desc4">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>html/css/javascript</li>
+                            <li>SOFT SKILLS </li>
+                            <li>Analytical Thinking</li>
+                            <li>Time Management</li>
+                            <li>Good Communication</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/couse.png"/>
+                    <div class="vertical-title5">
+                        COURCE PROJECT
+                    </div>
+                    <div class="vertical-desc5">
+                        <ul>
+                            <li>LIVE PROJECT EXHIBITION</li>
+                            <li>INTER HOUSE SCIENCE PROJECT COMPETITIO</li>
+                            <li>Basic computer course</li>
+                            <li>Skill training program</li>
+                            <li>Data visualisation:Empowering Business with Effective Insight</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">Tarun's Developer Portfolio</div>
+            <div class="footer-second">
+                <ul>
+                    <li class="service"><b>SKILLS</b></li>
+                    <li class="website">website developement</li>
+                    <li class="consulting">consulting</li>
+                    <li class="E">E-commerce solution</li>
+                </ul>
+            </div>
+            <div class="footerthird">
+                <ul>
+                    <li class="contact">CONTACT</li>
+                    <li class="number">(+91)8010201565</li>
+                    <li class="email" >tarunlohia91@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+             <button class="btn1" onclick="window.location.href=' https://www.facebook.com/profile.php?id=100014575890786&mibextid=LQQJ4d';">facebook</button>
+             <button class="btn2" onclick="window.location.href=' https://instagram.com/aaraavv1?igshid=YTQwZjQ0NmI0OA==';">instagram</button>
+             <button class="btn3" onclick="window.location.href=' https://www.linkedin.com/in/tarun-lohia-6a964b265';">Linkdin</button>
+             <button class="btn4" onclick="window.location.href=' https://instagram.com/aaraavv1?igshid=YTQwZjQ0NmI0OA==';">Twitter</button>
+            </div>
+        </div>
+        
+        <div class="text-centre">
+             WWW.Tarunportfolio.com | All rights reserved &#169; copyright</div>
+    </footer>
+</body>
+
+</html>
