@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+body{
+    background-color: bisque;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+.container{
+    max-width: 4110px;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar li{
+    list-style: none;
+    margin: 0px 10px;
+    font-size: 27px;
+    cursor: pointer;
+    color: black;
+}
+.top-right{
+    width: 50%;
+}
+
+.navbar li:hover{
+    color: white;
+}
+.top-left{
+    width: 50%;
+}
+.section1{
+    max-height: 100vh;
+}
+.logo{
+    font-size: 2.5rem;
+    padding: 25px;
+}
+
+.dumbell-img{
+    width: 283px;
+}
+.top-right .clubimg{
+    width: 250px;
+}
+.section1 h1{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section2 h1{
+    font-size: 2rem;
+}
+.section2{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.section2 p{
+    padding: 0.8vw;
+    text-align: center;
+}
+.box{
+    
+    padding: 8px 0px;
+    border-radius: 8px;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid black;
+    text-align: center;
+}
+.box h1{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+.box ul{
+    list-style: none;
+}
+.box ul li{
+    margin: 12px 2px;
+}
+.reach{
+    width: 50px;
+    margin: 12px;
+    cursor: pointer;
+}
+.box2{
+    padding: 8px 0px;
+    margin: 12px 22px;
+    min-width: 20vw;
+    text-align: center;
+}
+.box2 ul{
+    list-style: none;
+}
+.box2 ul p{
+    margin: 50px;
+}
+.box2 h2{
+    margin: 35px;
+}
+.activity li{
+    margin: 50px;
+    font-size: 1.3rem;
+}
+
+
+
+.min-h-screen{
+    min-height: 100vh;
+}
+.bg-red{
+    background-color: red;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+}
+.items-centre{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-centre{
+    justify-content: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.font-bold{
+    font-weight: bold;
+}
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.my-2{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.px-2{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.text-blue{
+    color: rgb(29,88,214);
+}
+.btn{
+    padding: 7px 12px;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(29,88,214)
+    ;
+}
+.text-centre{
+    text-align: center;
+}
+.highlighted{
+    font-weight: bold;
+}
+.bg{
+    background-color: rgb(99, 110, 110);
+    color: white;
+}
